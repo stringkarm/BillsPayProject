@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BillsPayProject.MainPage"
+              Background="Orange">
+
+    <ContentPage.Resources>
+        <Color x:Key="SectionColor">#315e26</Color>
+        <Color x:Key="LightColor">#d6d6d6</Color>
+        <Color x:Key="DarkColor">#48dfeb</Color>
+    </ContentPage.Resources>
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height=".3*"/>
+            <RowDefinition Height=".7*"/>
+        </Grid.RowDefinitions>
+        <Frame Padding="10"
+               BackgroundColor="{StaticResource SectionColor}"
+               BorderColor="Transparent">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height=".1*"/>
+                    <RowDefinition Height=".9*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Grid.ColumnSpan="3"
+                       Text="TOTAL P/PERSON"
+                       TextColor="{StaticResource DarkColor}"
+                       FontAttributes="Bold"
+                       HorizontalTextAlignment="Center"/>
+                <Label Grid.Row="1"
+                       Text="$0.00"
+                       TextColor="{StaticResource LightColor}"
+                       FontAttributes="Bold"
+                       FontSize="35"
+                       VerticalTextAlignment="Center"
+                       HorizontalOptions="Center"/>
+                <BoxView Grid.Row="1"
+                         Grid.Column="1"
+                         WidthRequest="2"
+                         VerticalOptions="FillAndExpand"
+                         Color="{StaticResource LightColor}"/>
+                <VerticalStackLayout
+                    Grid.Row="1"
+                    Grid.Column="2"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center">
+                    <Label Text="SUBTOTAL"
+                           TextColor="{StaticResource LightColor}"/>
+                    <Label Text="$0.00"
+                           TextColor="{StaticResource LightColor}"
+                           FontAttributes="Bold"/>
+                    <Label Margin="0,11,0,0"
+                           Text="TIP"
+                           TextColor="{StaticResource LightColor}"/>
+                    <Label Text="$0.00"
+                           TextColor="{StaticResource LightColor}"
+                           FontAttributes="Bold"/>
+                </VerticalStackLayout>
+            </Grid>
+        </Frame>
+        <Grid Grid.Row="1">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition Height="100"/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label Text="Enter your bill"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   FontAttributes="Bold"
+                   TextColor="White"/>
+            <VerticalStackLayout                       
+                        Grid.Column="1"
+                        HorizontalOptions="Center"
+                        VerticalOptions="Center">
+                <Entry
+                    Text="0.00"
+                    TextColor="Black"
+                    BackgroundColor="{StaticResource LightColor}"
+                    WidthRequest="230"/>
+            </VerticalStackLayout>
+            <Label Grid.Row="1"
+                   Text="Choose your tip"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   FontAttributes="Bold"
+                   TextColor="White"/>
+            <VerticalStackLayout
+                Grid.Column="1"
+                HorizontalOptions="Center"
+                VerticalOptions="Center">
+
+            </VerticalStackLayout>
+        </Grid>
+    </Grid>
+
+
+</ContentPage>
