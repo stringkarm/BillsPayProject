@@ -72,7 +72,7 @@
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="100"/>
-                <ColumnDefinition/>
+                <ColumnDefinition />
             </Grid.ColumnDefinitions>
             <Label Text="Enter your bill"
                    HorizontalOptions="Center"
@@ -96,9 +96,24 @@
                    FontAttributes="Bold"
                    TextColor="White"/>
             <VerticalStackLayout
-                Grid.Column="1"
+                Grid.Column="2"
+                Grid.Row="1"
                 HorizontalOptions="Center"
                 VerticalOptions="Center">
+                <Button
+                    Text="10%"
+                    HeightRequest="20"
+                    WidthRequest="100"
+                    
+                    />
+                <Button
+                    Text="15%"
+                    HeightRequest="20"
+                    WidthRequest="100"/>
+                <Button
+                    Text="20%"
+                    HeightRequest="20"
+                    WidthRequest="100"/>
 
             </VerticalStackLayout>
         </Grid>
