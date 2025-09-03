@@ -5,7 +5,7 @@
               Background="Orange">
 
     <ContentPage.Resources>
-        <Color x:Key="SectionColor">#315e26</Color>
+        <Color x:Key="SectionColor">#315e40</Color>
         <Color x:Key="LightColor">#d6d6d6</Color>
         <Color x:Key="DarkColor">#48dfeb</Color>
     </ContentPage.Resources>
@@ -79,16 +79,17 @@
                    VerticalOptions="Center"
                    FontAttributes="Bold"
                    TextColor="black"/>
-            <VerticalStackLayout                       
+            <HorizontalStackLayout                       
                         Grid.Column="1"
                         HorizontalOptions="Center"
                         VerticalOptions="Center">
-                <Entry
-                    Text="0.00"
-                    TextColor="Black"
-                    BackgroundColor="{StaticResource LightColor}"
-                    WidthRequest="230"/>
-            </VerticalStackLayout>
+                <Entry  x:Name="txtBill"
+                        Completed="txtBill_Completed"
+                        Text="0.00"
+                        TextColor="Black"
+                        BackgroundColor="{StaticResource LightColor}"
+                        WidthRequest="230"/>
+            </HorizontalStackLayout>
             <Label Grid.Row="1"
                    Text="Choose your tip"
                    HorizontalOptions="Start"
@@ -117,8 +118,8 @@
                      HeightRequest="70"
                      WidthRequest="70"/>
             </HorizontalStackLayout>
-            <Label Grid.Row="2"
-                    Text="Tip:0%"
+            <Label  x:Name="lblTip"
+                     Grid.Row="2"
                     HorizontalOptions="Start"
                     VerticalOptions="Center"
                     FontAttributes="Bold"
