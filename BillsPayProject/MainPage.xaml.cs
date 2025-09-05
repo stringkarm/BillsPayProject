@@ -42,7 +42,7 @@
         private void sldTip_ValueChanged(object sender, ValueChangedEventArgs e)
         {
             tip=(int)sldTip.Value;
-            lblTip.Text = $"Tip {tip}%";
+            lblTip.Text = $"Tip: {tip}%";
             CalculateTotal();
         }
 

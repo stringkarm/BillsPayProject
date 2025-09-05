@@ -33,19 +33,19 @@
                 <Label x:Name="lblTotal"
                        Grid.Row="1"
                        Text="$0.00"        
-                       FontSize="35"
+                       FontSize="25"
                        HeightRequest="50"
                        FontAttributes="Bold"/>
                 <HorizontalStackLayout
                        Grid.Row="2"
                        HorizontalOptions="Start"
                        HeightRequest="20">
-                <Label Grid.Row="2"
+                    <Label Grid.Row="2"
                        Text="SUBTOTAL:"
                        FontSize="12"
                        FontAttributes="Bold"
-                       WidthRequest="75"/>
-                <Label x:Name="lblSubtotal"
+                       WidthRequest="70"/>
+                    <Label x:Name="lblSubtotal"
                        Grid.Row="2"
                        FontSize="12"
                        Text="$0.00"/>
@@ -54,11 +54,11 @@
                            Grid.Row="2"
                            Grid.Column="1"
                            HeightRequest="20"
-                           WidthRequest="130">
+                           WidthRequest="120">
                     <Label Text="TIP:"
                            FontSize="12"
                            FontAttributes="Bold"
-                           WidthRequest="30"/>  
+                           WidthRequest="30"/>
                     <Label x:Name="lblTipByPerson"
                            Grid.Row="2"
                            FontSize="12"
@@ -80,7 +80,7 @@
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="120"/>
-                        <ColumnDefinition />
+                        <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
 
                     <Label Text="Enter your bill: $"
